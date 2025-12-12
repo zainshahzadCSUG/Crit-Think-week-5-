@@ -1,0 +1,40 @@
+// CT5 pseudo
+
+- display "enter temperatures for the week" -> prompt user to input 7 daily temperatures
+
+- create ArrayList -> 7 days 
+    -> "Monday"
+    -> "Tuesday"
+    -> "Wednesday"
+    -> "Thursday"
+    -> "Friday"
+    -> "Saturday"
+    -> "Sunday"
+
+- create ArrayList temps
+
+- for-loop from 1 through 7:
+    -> ask user to enter temperature for that day
+    -> convert input to floating-point
+    -> store temperature into temps
+
+- ask user: "enter a day name OR type 'week'" -> read input into variable choice
+
+IF choice == "week":
+    -> initialize sum = 0
+    -> for-loop through temps:
+           -> add each temperature to sum
+    -> average = sum / 7
+    -> print out:
+           -> "temperature for each day"
+           -> "weekly average temperature"
+
+ELSE:
+    -> set found = false
+    -> for-loop through days:
+           IF choice matches a day:
+                -> print temperature for that day
+                -> found = true
+    IF found == false:
+         -> print "invalid day entered"
+
